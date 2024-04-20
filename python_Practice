@@ -1,1 +1,184 @@
+### 1.To check that number is even or positive and negative
 
+num = 14
+if num % 2==0:
+    print("Even number")
+if num >0:
+    print("Number is positive")
+elif num==0:
+    print("zero")
+else:
+    print("Number is negative")
+# User input-------------------------
+num = float(input("Enter a number :"))
+if num >= 0:
+    if num==0:
+        print("zero")
+    else:
+        print("Positive number")
+else:
+    print("Negative number")
+
+
+
+### 3.Check the number is odd and not devisble by 3
+number = 27
+if number % 2!=0:
+    print("odd number")
+else:
+    print("even number")
+if number % 3==0:
+    print("number is devisble by 3")
+else:
+    print("number is not devisble by 3")
+----------------------------------------------
+
+num=27
+if num % 2!=0 and num % 3==0:
+    print("odd number and number is devisible by 3")
+else:
+    print("number is not devisible by 3")
+
+### 4.Devisible by 4 or 6
+number = 18
+if number % 4==0 or number % 6==0:
+    print("number is devisible by 4 ot 6")
+else:
+    print("number is not devisible by 4 or 6")
+
+
+## 5.Eligility of Vote and driving
+age=18
+if age>=18:
+    print("Eligible for Vote and Driving")
+else:
+    print("Not Eligible")
+
+### 6.Multiple range check if the given is in range of [1-10] or [20-30]
+number=25
+
+if number in range(1,10):
+    print(number, "is range of [1,10]")
+elif number in range(20,30):
+        print(number,"is range of [20-30]")
+else:
+    print("number is not in range")
+
+### 7.Negative and Odd number
+number = 7
+
+if number < 0:
+    print("Negative number")
+else:
+    print("Positive number")
+    
+if number % 2!=0:
+    print("Odd number")
+else:
+    print("Even number")
+
+### 8.Eligibility for senior citizen (age greater than 60 yrs) or student (age less than 25)discount
+age = 63
+
+if age>=60:
+    print("Eligibile for senior citizen discount")
+        
+if age<=25:
+    print("Eligibile for student discount")
+
+### 9.Devisibility by both 5 and 7 
+num =35
+
+if num % 5==0 and num % 7==0:
+    print("number is devisible by both 5 and 7")
+else:
+    print("number is not devisible ")
+
+### 10.Non negative or Even number
+num = -8
+
+if num >=0:
+    print("Number is non negative")
+else:
+    print("Number is negative")
+    
+if num %2==0:
+    print("Even number")
+else:
+    print("Odd number")
+
+### 11.Prime [2,3,5,7,11...]and Odd numbers
+number =7
+
+if number >1 and number %1==0:
+    print('Prime number')
+else:
+    print("Not a prime number")
+
+### 12.Eligibilty for discount and free shipping
+P_Amount =120
+
+if P_Amount >=150 and P_Amount>=120:
+    print("Eligibile for discount and free shipping")
+elif P_Amount>=120:
+    print("Eligibile for free shipping")
+else:
+    print("Not eigible for discount and free shipping")
+        
+### 13.Devisible by 3 or 8
+number =12
+
+if number % 3==0 and number % 8==0:
+    print("Number is devisible by 3 or 8")
+else:
+    print("Number is not devisible by 3 or 8")
+
+### 14.Non positive and even number
+number = -6
+
+if number >0:
+    print("Positive number")
+else:
+    print("Non positive number")
+if number %2==0:
+    print("Even number")
+else:
+    print("Odd number")
+
+    
+### 15.Age group clasification with AND
+age =13
+
+if age <13 :
+    print("Child")
+if age in range (13,19):
+    print("Teenager")
+if age >20:
+    print("Adult")
+
+### 16.Python Fuction divisible by 2 or 5
+def dev():
+    if n % 2==0:
+        print("number is devisible by 2 or 5")
+        
+        
+dev(25)
+
+### 19.Multiple of 3 and 7
+num =2
+
+if num %3==0 and num %7==0:
+    print("Number is multiple of 3 and 7")
+elif num %3==0:
+    print("Multple of 3")
+elif num %7==0:
+    print("Multiple of 7")
+    
+else:
+    print("Number is not multiple if 3 and 7")
+
+### 23.Eligibiliy for Discount or Membership benifits
+
+### 26.Eligibility for Senior citizen and Not a new customer
+
+### 30.Elegibily for senior citizen or free trail

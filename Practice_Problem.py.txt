@@ -1,0 +1,346 @@
+Practice_Problem
+_________________
+
+
+### 1.Write a program to convert kg to g. (Input 56kg print in grams)
+
+input =56
+grams=input * 1000
+print(grams ,"grams")
+
+### 2.Write a program to covert temperature from degree C to F. (Input 80C)
+(80°C × 9/5) + 32 = 176°F
+
+input = 80
+F=(input * 9/5) + 32 
+print(F,"°F")
+
+### 3.Declare and initialise 3 three variable and print the biggest number.
+
+a=4
+b=0
+c=49
+
+if a>b and a>c:
+    print(a,"is biggest number")
+if b>a and b>c:
+    print(b,"is biggest number")
+if c>a and c>b:
+    print(c,"is biggest number")
+
+
+ ### 4. Write a program that performs the following tasks.
+a. Store a number in a variable
+b. If value is not in range (100-1000) prints wrong number else follows
+the steps
+c. Check even or odd
+d. If even divide the number by 3 and print the remainder
+e. If odd divide the number by 2 and print the remainder.
+
+input_num = int(input("Enter the number :"))
+if input_num in range(100,1000):
+    if input_num %2==0:
+        print("even number")
+        remainder = input_num % 3
+        print(remainder,"remainder")        
+    else:
+        print("odd number")
+        remainder = input_num % 2
+        print(remainder,"remainder")
+else:
+    print("wrong number")
+
+
+### 5.Declare & initialise a number. Check whether the number is in range 0-100
+or not. If not in range print invalid input. Else – if the number is in range 90-
+100 then print Super Smart, 80-90 print Smart,70-80 print smart enough,
+60-70 print just smart, 35-60 print no smart, 0-35 print dump.
+
+input_num = int(input("Enter the number :"))
+if input_num not in range(0,100):
+    print("invalid input")
+
+elif (input_num>90):
+    print('Super Smart')
+    
+elif (input_num>80):
+    print('Smart')
+    
+elif (input_num>70):
+    print('Smart enough')
+    
+elif (input_num>60):
+    print('Just Smart')
+    
+elif (input_num>35):
+    print('Dump')
+    
+else:
+    print('Please provide number greater than 35')
+
+
+### 6.Write a program to perform simple math based on the user inputs by using
+
+
+n=7
+m=9
+
+def add():
+    return n+m
+
+def subs():
+    return n-m
+
+def prod():
+    return n*m
+
+def div():
+    return n/m
+
+def rem():
+    return n%m
+    
+def calculator(op):
+    switch ={
+        '+': add(),
+        '-': subs(),
+        '*': prod(),
+        '/': div(),
+        "%": rem(),
+    }
+    
+    return switch.get(op,'Choose one of the following operator:+,-,*,/,%')
+calculator('%')
+
+
+### 7. Write a program to print “SEEKHO BIGDATA”for 60 times.
+
+for i in range(1,60):
+    print('SEEKHO BIGDATA')
+
+
+
+### 8.Write a program to print all numbers which are divisible by 11 from 250 to 550.
+
+for num in range(250,550):
+    if num % 11 == 0:
+        print(num,end =' ')
+
+### 9.Write a program to sum all the numbers from 56 to 153.
+
+for num in range(56,153):
+    sum=0
+    sum=num+num
+    print(sum,end =' ')
+
+### 10. Write a program to print all even numbers in range 700 to 900
+
+
+for num in range(700,900):
+    if num %2==0:
+        print(num,end=', ')
+
+### 11 . Write a program to print all odd numbers from 251 to 51. like (251,249,...51)
+
+for num in range(251,49,-1):
+    if num % 2!=0:
+        print(num,end=' ')
+
+### 12.Write a Program to print the count of the even numbers between the given range 
+
+count=0
+for num in range (1,20):
+    if num % 2==0:
+        count =count+1
+        print(count,end=', ')
+
+### 13.Write a program to print alternate even numbers from 20 to 140. Like (20,24,28...)
+
+for num in range(20,140,4):
+    print(num,end=', ')
+
+
+### 14. Write a program to print alternate even numbers from 20 to 140. Like (22,26,30...)
+
+for num in range(22,140,4):
+    print(num,end=', ')
+
+
+15. Print following series 2*3,3*4,4*5,......16*17 (Print in two ways – patter & multiplied value)
+
+#  1: Print the series pattern
+def print_series_pattern(start, end):
+    for i in range(start, end):
+        print(f"{i}*{i+1}", end=", ")
+    print(f"{end}*{end+1}")
+
+#  2: Print the multiplied values
+def print_series_values(start, end):
+    for i in range(start, end):
+        print(i * (i+1), end=", ")
+    print(end * (end+1))
+
+# Print the series pattern
+print("Series pattern:")
+print_series_pattern(2, 16)
+
+# Print the multiplied values
+print("\nMultiplied values:")
+print_series_values(2, 16)
+
+
+### 16. Write a program to sum all even numbers between 382 and 582.
+
+for num in range(282,582):
+    sum=0
+    if num % 2==0:
+        sum=num+num
+        print(sum,end =', ')
+
+### 18. Write a program to find the average of 24,26,28,.....100.
+
+start = 24
+end = 100
+step = 2
+
+numbers = list(range(start, end + 1, step))
+average = sum(numbers) / len(numbers)
+
+print("The average of the numbers from", start, "to", end, "is:", average)
+
+
+### 20. Write a program to print A, B alternatively for 100 times. Ex: (A, B, A, B, A,B...)
+
+for i in range(1,100):
+    print('A,B',end=',')
+
+### 21. Write a program to print the series : 10@9,9@8,8@7.......-5@-6
+
+for i in range(10,-7,-1):
+    print(i,end='@,')
+
+### 22. Write programs to print the following series. 100,200,300........10000
+
+for num in range (100,1000,100):
+    print(num,end=' ')
+
+### 23. Write programs to print the following series. 5^2, 7^2,9^2.....25^2
+
+for num in range(5,25,2):
+    print(num,end='^2, ')
+
+### 24.Write programs to print the following series. 5,10,5,10,5,10,5 for 7 times
+
+
+for i in range(1,8):
+    print('5,10',end=' ')
+
+### 26. Write programs to print the following series. 1,even,3,even,5,even,.......35,even
+
+for num in range(1,35):
+    if num %2!=0:
+        print(num,end=',even, ')
+
+### 30. Write a for loop that never ends?
+for i in range(int(1e18)):
+    print(i)
+
+### 31.Write a Loop inside other loop and observe the execution flow?
+
+for i in range(1,5+1):
+    for j in range(1,i+1):
+        print(j, end=" ")
+    print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
